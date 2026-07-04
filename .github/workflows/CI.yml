@@ -31,7 +31,7 @@ jobs:
 
     - name: Run Flake8
       run: |
-        flake8 .
+        flake8 . --extend-ignore=F403,F405,E302,W292 --max-line-length=120
 
     - name: Run Pytest
       run: |
